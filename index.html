@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Teplitsa form</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="logo">
+        <img src="лого 2.svg" class="logo__img" alt="лого">
+      </div>
+      <div class="form__block">
+        <p class="form__title">Заказ цветов</p>
+        <form action="" class="form">
+          <input type="text" placeholder="Имя" class="form__input" name="name">
+          <input type="text" id="phone" name="phone" placeholder="+7 (_ _ _) _ _ _ – _ _ – _ _"
+          class="form__input">
+          <div class="form__product">
+            <p class="form__product-text text">
+              Выберете товар
+            </p>
+            <div class="product-item">
+              <input type="radio" id="flower" name="flower" value="Цветы" />
+              <label for="flower">Цветы</label>
+            </div>
+            <div class="product-item">
+              <input type="radio" id="decor" name="decor" value="Декор" />
+              <label for="decor">Декор</label>
+            </div>
+            <div class="product-item">
+              <input type="radio" id="staf" name="staf" value="Одежда" />
+              <label for="staf">Одежда</label>
+            </div>
+          </div>
+          <div class="form__calendar">
+            <p class="form__calendar-text text">Дата готовности заказа
+              <input type="date" name="Date" id="davaToday" class="data-input">
+            </p>
+          </div>
+          <div class="form__timing">
+            <p class="form__timing-text text">
+              Удобный интервал времени получения заказа
+            </p>
+            <div class="timing-item">
+              <input type="radio" id="dinner1" name="dinner" value="с 10 до 12" />
+              <label for="dinner1">с 10 до 12</label>
+            </div>
+            <div class="timing-item">
+              <input type="radio" id="dinner2" name="dinner" value="с 12 до 15" />
+              <label for="dinner2">с 12 до 15</label>
+            </div>
+            <div class="timing-item">
+              <input type="radio" id="dinner3" name="dinner" value="с 15 до 17" />
+              <label for="dinner3">с 15 до 17</label>
+            </div>
+            <div class="timing-item">
+              <input type="radio" id="dinner4" name="dinner" value="с 17 до 20" />
+              <label for="dinner4">с 17 до 20</label>
+            </div>
+            <div class="timing-item">
+              <input type="radio" id="dinner5" name="dinner" value="после 20" />
+              <label for="dinner5">после 20(обговаривается индивидуально)</labe>
+            </div>
+          </div>
+          <div class="form__receiving">
+            <p class="form__receiving-text text">
+              Способ получения заказа
+            </p>
+            <div class="receiving-item">
+              <input type="radio" id="pickup" name="receiving" value="Самовывоз" />
+              <label for="pickup">Самовывоз из мастерской (Чапаевская 87)</label>
+            </div>
+            <div class="receiving-item">
+              <input type="radio" id="delivery" name="receiving" value="Доставка" />
+              <label for="delivery">Доставка курьером по городу 400р.</label>
+            </div>
+            <div class="receiving-item">
+              <input type="radio" id="delivery2" name="receiving" value="Доставка2" />
+              <label for="delivery2">Доставка удаленных районов (рассчитывается по км)</label>
+            </div>
+          </div>
+          <input type="text" id="" name="adresCl" placeholder="Адрес доставки"
+          class="form__input">
+          <textarea name="message" class="form__input form__input--textarea"
+          placeholder="Оставьте Ваш комментарий"></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>document.getElementById('davaToday').valueAsDate = new Date();</script>
+</body>
+</html>
