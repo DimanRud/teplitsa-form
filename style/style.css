@@ -80,6 +80,7 @@ p {
 }
 
 .form__input--textarea {
+  padding-bottom: 90px;
   resize: none;
 }
 
